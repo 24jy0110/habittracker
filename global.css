@@ -1,0 +1,156 @@
+/* -----------------------------
+   🌈 全局字体（柔和圆润）
+------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #f5eaff 0%, #e0f1ff 100%);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* -----------------------------
+   🌸 全站卡片（玻璃 / 漂浮）
+------------------------------ */
+.glass-card {
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 18px;
+    padding: 20px;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 8px 30px rgba(150, 160, 200, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* 鼠标悬浮 有漂浮感 */
+.glass-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(150, 160, 220, 0.22);
+}
+
+/* -----------------------------
+   💗 萌系按钮（粉蓝渐变）
+------------------------------ */
+.btn-cute {
+    background: linear-gradient(135deg, #b7a8ff, #81c7ff);
+    border: none;
+    border-radius: 14px;
+    color: white;
+    padding: 12px 20px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.btn-cute:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.btn-cute-outline {
+    background: rgba(255,255,255,0.5);
+    border: 2px solid #9db9ff;
+    border-radius: 14px;
+    padding: 10px 20px;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.btn-cute-outline:hover {
+    background: rgba(255,255,255,0.7);
+}
+
+/* -----------------------------
+   🧸 标题（可爱轻柔风）
+------------------------------ */
+h1, h2, h3 {
+    font-weight: 700;
+    color: #6b62ff;
+    text-shadow: 0 1px 3px rgba(150, 160, 220, 0.35);
+}
+
+/* -----------------------------
+   🫧 列表项（目标 / 群组）
+------------------------------ */
+.cute-list-item {
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 16px;
+    padding: 14px;
+    margin-bottom: 12px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: 0.25s;
+    box-shadow: 0 4px 15px rgba(150, 160, 200, 0.15);
+}
+
+.cute-list-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(150, 160, 220, 0.25);
+}
+
+/* -----------------------------
+   ✨ 小标签 / Badge 萌化
+------------------------------ */
+.badge-cute {
+    background: linear-gradient(135deg, #ffbde2, #b2c8ff);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* -----------------------------
+   📊 图表用：玻璃容器
+------------------------------ */
+.chart-glass {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    box-shadow: 0 8px 32px rgba(150, 160, 220, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* -----------------------------
+   💖 可爱的动画（心跳 / 闪光）
+------------------------------ */
+@keyframes cute-pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+.pop {
+    animation: cute-pop 1.4s infinite ease-in-out;
+}
+
+.card-link-wrapper {
+    display: block;
+}
+.card-link-wrapper:hover .glass-card {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 36px rgba(140,160,220,0.28);
+    cursor: pointer;
+}
+
+/* 🗑 共通：削除ボタン（ちょっと危険だけど可愛い感じ） */
+.btn-delete {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 14px;
+    border: 1px solid #ff9db5;
+    color: #d64565;
+    font-weight: 700;
+    padding: 8px 16px;
+    transition: 0.25s ease;
+}
+
+.btn-delete:hover {
+    background: #ffe3ea;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 160, 190, 0.5);
+}
